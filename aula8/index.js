@@ -28,7 +28,7 @@ saldo = cuentaDeLaura.retiro(100);
 // saldo = cuentaDeLaura.verSaldo();
 // console.log("El saldo actual es: " + "$ " + saldo + " MXN");
 
-saldo = cuentaDeLaura.deposito(5.753);
+saldo = cuentaDeLaura.deposito(5.498);
 // saldo = cuentaDeLaura.verSaldo();
 
 saldo = cuentaDeLaura.deposito(3475);
