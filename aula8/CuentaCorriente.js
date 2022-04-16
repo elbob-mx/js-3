@@ -20,7 +20,7 @@ export class cuentaCorriente {
       parseFloat(this.#saldo).toFixed(2);
       return (this.#saldo).toFixed(2);
       } else {
-        console.log(`Operación inválida.`);
+        console.log(`Operación no válida.`);
         parseFloat(this.#saldo).toFixed(2);
         return (this.#saldo).toFixed(2);
       };
@@ -32,7 +32,7 @@ export class cuentaCorriente {
         parseFloat(this.#saldo).toFixed(2);
         return (this.#saldo).toFixed(2);
       } else {
-        console.log(`Operación inválida.`);
+        console.log(`Operación no válida.`);
         parseFloat(this.#saldo).toFixed(2);
         return (this.#saldo).toFixed(2);
       };
@@ -40,6 +40,12 @@ export class cuentaCorriente {
   
     verSaldo() {
       return (this.#saldo).toFixed(2);
-    }
+    };
+
+    transferirParaCuenta(importe, cuentaDestino) {
+        this.retiro(importe);
+        cuentaDestino.deposito(importe);
+        console.log("**Transferencia realizada con éxito**");
+    };
   
   };
