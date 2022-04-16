@@ -1,4 +1,6 @@
-// movimientos de cuenta ---------------------->
+// IMPORTACIÓN DE CLASES ---------------------->
+// movimientos de cuenta ----------->
+import {CuentaCorriente} from "./CuentaCorriente.js"
 
 cuentaDeLaura = new cuentaCorriente();
 
