@@ -1,11 +1,13 @@
 // IMPORTACIÓN DE CLASES ---------------------->
 // movimientos de cuenta ----------->
 
-import {cliente} from "./Cliente.js"
-import {cuentaCorriente} from "./CuentaCorriente.js"
+import {cliente} from "./Cliente.js";
+import {cuentaCorriente} from "./CuentaCorriente.js";
 
-const cliente = new cliente();
+const usuario = new cliente();
 cliente.nombreCliente = "Laura";
+cliente.ocrCliente = "850690845005";
+cliente.nipCliente = "2351";
 
 const cuentaDeLaura = new cuentaCorriente();
 
@@ -39,4 +41,4 @@ saldo = cuentaDeLaura.deposito(3475);
 
 console.log("El saldo actual es: " + "$ " + saldo + " MXN");
 
-console.log("GRACIAS POR SU PREFERENCIA. GAME OVER. INSERT A COIN.");
+console.log("GAME OVER. INSERT A COIN.");
