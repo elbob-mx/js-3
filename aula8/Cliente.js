@@ -5,5 +5,5 @@ class cliente {
     ocrCliente;
     nipCliente;
     // numCuenta;
-    // #saldoCuenta;
+    // saldoCuenta;
   };
