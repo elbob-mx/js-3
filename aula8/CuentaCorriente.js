@@ -1,6 +1,6 @@
 // clase cuenta corriente ------------------>
 
-class cuentaCorriente {
+export class cuentaCorriente {
     numero;
     #saldo;
     agencia;

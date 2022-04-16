@@ -1,8 +1,9 @@
 // IMPORTACIÓN DE CLASES ---------------------->
 // movimientos de cuenta ----------->
-import {CuentaCorriente} from "./CuentaCorriente.js"
 
-cuentaDeLaura = new cuentaCorriente();
+import {cuentaCorriente} from "./CuentaCorriente.js"
+
+const cuentaDeLaura = new cuentaCorriente();
 
 let saldo = cuentaDeLaura.verSaldo();
 // console.log("El saldo actual es: " + "$ " + saldo + " MXN");
