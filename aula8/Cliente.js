@@ -1,9 +1,11 @@
 // clase cliente ----------------->
 
-class cliente {
+export class cliente {
+
     nombreCliente;
     ocrCliente;
     nipCliente;
     // numCuenta;
     // saldoCuenta;
+    
   };

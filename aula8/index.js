@@ -1,7 +1,11 @@
 // IMPORTACIÓN DE CLASES ---------------------->
 // movimientos de cuenta ----------->
 
+import {cliente} from "./Cliente.js"
 import {cuentaCorriente} from "./CuentaCorriente.js"
+
+const cliente = new cliente();
+cliente.nombreCliente = "Laura";
 
 const cuentaDeLaura = new cuentaCorriente();
 
