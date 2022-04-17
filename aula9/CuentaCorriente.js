@@ -2,13 +2,13 @@
 
 export class cuentaCorriente {
     
-    usuario;
+    #usuario;
     numero;
     #saldo;
     agencia;
   
     constructor() {
-        this.usuario = null;
+        this.#usuario = null;
         this.numero = "";
         this.agencia = "";
         this.#saldo = 0;
