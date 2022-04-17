@@ -56,7 +56,11 @@ console.log("Cuenta de Laura: ", cuentaDeLaura.verSaldo());
 console.log("Cuenta de Dana: ", cuentaDeDana);
 console.log("Cuenta de Dana: ", cuentaDeDana.verSaldo());
 
-cuentaDeLaura.transferirParaCuenta(100, cuentaDeDana);
+let paramValor = 100;
+
+console.log("Parámetro 'Valor'", paramValor);
+cuentaDeLaura.transferirParaCuenta(paramValor, cuentaDeDana);
+console.log("Parámetro 'Valor'", paramValor);
 
 console.log("el saldo actual de " + usuario2.nombreCliente + " es de: " + "$" + cuentaDeDana.verSaldo() + "MXN");
 console.log("El saldo actual de " + usuario.nombreCliente + " es de: " + "$" + cuentaDeLaura.verSaldo() + "MXN");

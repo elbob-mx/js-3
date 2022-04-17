@@ -53,6 +53,5 @@ export class cuentaCorriente {
         cuentaDestino.deposito(importe);
         console.log("**Transferencia realizada con éxito**" + "por $" + this.#saldo );
         console.log("**Nuevo saldo: $" + this.#saldo);
-    };
-  
-  };
+    };  
+};
