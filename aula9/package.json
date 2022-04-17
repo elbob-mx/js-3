@@ -1,0 +1,12 @@
+{
+  "name": "cuentasbancomoras",
+  "version": "1.0.0",
+  "description": "Gestión de Cuentas del Banco de las Moras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roberto Gutiérrez",
+  "license": "ISC",
+  "type": "module"
+}
