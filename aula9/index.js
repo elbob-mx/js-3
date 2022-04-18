@@ -46,6 +46,13 @@ cuentaDeDana.numero = "84250304";
 cuentaDeDana.agencia = "028";
 cuentaDeDana.usuario = usuario2;
 
+
+if(cuentaDeDana.cliente) {
+    console.log(cuentaDeDana.cliente)
+} else {
+    console.log(cuentaDeDana);
+}
+
 saldo = cuentaDeDana.deposito(103475.756);
 saldo = cuentaDeDana.retiro(3475.756);
 saldo = cuentaDeDana.retiro(99999.99);
@@ -64,3 +71,5 @@ console.log("Parámetro 'Valor'", paramValor);
 
 console.log("el saldo actual de " + usuario2.nombreCliente + " es de: " + "$" + cuentaDeDana.verSaldo() + "MXN");
 console.log("El saldo actual de " + usuario.nombreCliente + " es de: " + "$" + cuentaDeLaura.verSaldo() + "MXN");
+
+console.log(cuentaDeDana.cliente);
