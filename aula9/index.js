@@ -16,7 +16,6 @@ cuentaDeLaura.numero = "58280270";
 cuentaDeLaura.agencia = "051";
 cuentaDeLaura.usuario = usuario;
 
-console.log(cuentaDeLaura);
 
 let saldo = cuentaDeLaura.verSaldo();
 console.log("El saldo actual es: " + "$ " + saldo + " MXN");

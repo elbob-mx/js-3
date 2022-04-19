@@ -17,7 +17,7 @@ export class cuentaCorriente {
     };
   
     constructor() {
-        this.#usuario = "Dana";
+        this.#usuario = null;
         this.numero = "";
         this.agencia = "";
         this.#saldo = 0;
