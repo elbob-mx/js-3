@@ -10,7 +10,6 @@ export class cliente {
     constructor(nombreCliente, ocrCliente, nipCliente) {
       this.nombreCliente = nombreCliente;
       this.ocrCliente = ocrCliente;
-      this. nipCliente = nipCliente;
-    }
-
+      this.nipCliente = nipCliente;
+    };
   };

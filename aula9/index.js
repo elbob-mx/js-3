@@ -6,22 +6,19 @@ import {cuentaCorriente} from "./CuentaCorriente.js";
 
 // variables *** //
 
-const usuario = new cliente();
-usuario.nombreCliente = "Laura";
-usuario.ocrCliente = "850690845005";
-usuario.nipCliente = "2351";
-
-const cuentaDeLaura = new cuentaCorriente();
-cuentaDeLaura.numero = "58280270";
-cuentaDeLaura.agencia = "051";
-cuentaDeLaura.usuario = usuario;
+const usuario = new cliente("Laura", "850690845005", "2115");
+const usuario2 = new cliente("Dana", "099433671834", "5593");
 
 
+const cuentaDeLaura = new cuentaCorriente(usuario, "58280270", "022");
+const cuentaDeDana = new cuentaCorriente(usuario2, "84250304", "028");
+
+
+// cliente usuario Laura ----------------------->
 let saldo = cuentaDeLaura.verSaldo();
 console.log("El saldo actual es: " + "$ " + saldo + " MXN");
 
 saldo = cuentaDeLaura.deposito(1000);
-// saldo = cuentaDeLaura.verSaldo();
 console.log("El saldo actual es: " + "$ " + saldo + " MXN");
 
 saldo = cuentaDeLaura.retiro(100);
@@ -35,17 +32,6 @@ console.log("El saldo actual de " + usuario.nombreCliente + " es de: " + "$" + c
 
 
 // nuevo cliente 2 ------------------------->
-const usuario2 = new cliente();
-usuario2.nombreCliente = "Dana";
-usuario2.ocrCliente = "099433671834";
-usuario2.nipCliente = "5593";
-
-const cuentaDeDana = new cuentaCorriente();
-cuentaDeDana.numero = "84250304";
-cuentaDeDana.agencia = "028";
-cuentaDeDana.usuario = usuario2;
-
-
 if(cuentaDeDana.cliente) {
     console.log(cuentaDeDana.cliente)
 } else {
@@ -57,18 +43,19 @@ saldo = cuentaDeDana.retiro(3475.756);
 saldo = cuentaDeDana.retiro(99999.99);
 
 // resumen cuentas ------------------------------->
-console.log("Cuenta de Laura: ", cuentaDeLaura);
-console.log("Cuenta de Laura: ", cuentaDeLaura.verSaldo());
-console.log("Cuenta de Dana: ", cuentaDeDana);
-console.log("Cuenta de Dana: ", cuentaDeDana.verSaldo());
+// console.log("Cuenta de Laura: ", cuentaDeLaura);
+// console.log("Cuenta de Laura: ", cuentaDeLaura.verSaldo());
+// console.log("Cuenta de Dana: ", cuentaDeDana);
+// console.log("Cuenta de Dana: ", cuentaDeDana.verSaldo());
 
 let paramValor = 100;
 
-console.log("Parámetro 'Valor'", paramValor);
+// console.log("Parámetro 'Valor'", paramValor);
 cuentaDeLaura.transferirParaCuenta(paramValor, cuentaDeDana);
 console.log("Parámetro 'Valor'", paramValor);
 
 console.log("el saldo actual de " + usuario2.nombreCliente + " es de: " + "$" + cuentaDeDana.verSaldo() + "MXN");
 console.log("El saldo actual de " + usuario.nombreCliente + " es de: " + "$" + cuentaDeLaura.verSaldo() + "MXN");
 
-console.log(cuentaDeDana.cliente);
+console.log(cuentaDeLaura.nombreCliente);
+console.log(cuentaDeDana.nombreCliente);

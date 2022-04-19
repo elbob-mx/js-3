@@ -2,24 +2,27 @@
 
 export class cuentaCorriente {
     
-    #usuario;
+    usuario;
     numero;
     #saldo;
     agencia;
 
-    set cliente(valor){
-      if(valor instanceof cliente)
-      this.cliente = valor;
+    /**
+   * @param {import("./Cliente").cliente} valor
+   */
+    set usuario(valor){
+      if(valor instanceof usuario)
+      this.usuario = valor;
     };
 
-    get cliente() {
-      return this.#usuario;
+    get usuario() {
+      return this.usuario;
     };
   
-    constructor() {
-        this.#usuario = null;
-        this.numero = "";
-        this.agencia = "";
+    constructor(usuario, numero, agencia) {
+        this.usuario = usuario;
+        this.numero = numero;
+        this.agencia = agencia;
         this.#saldo = 0;
     };
   
