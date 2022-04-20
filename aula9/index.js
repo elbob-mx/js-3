@@ -9,20 +9,18 @@ import {cuentaCorriente} from "./CuentaCorriente.js";
 const usuario = new cliente("Laura", "850690845005", "2115");
 const usuario2 = new cliente("Dana", "099433671834", "5593");
 
-
 const cuentaDeLaura = new cuentaCorriente(usuario, "58280270", "022");
 const cuentaDeDana = new cuentaCorriente(usuario2, "84250304", "028");
 
 
 // cliente usuario Laura ----------------------->
 let saldo = cuentaDeLaura.verSaldo();
-console.log("El saldo actual es: " + "$ " + saldo + " MXN");
+// console.log("El saldo actual es: " + "$ " + saldo + " MXN");
 
 saldo = cuentaDeLaura.deposito(1000);
 console.log("El saldo actual es: " + "$ " + saldo + " MXN");
 
 saldo = cuentaDeLaura.retiro(100);
-saldo = cuentaDeLaura.verSaldo();
 console.log("El saldo actual es: " + "$ " + saldo + " MXN");
 
 saldo = cuentaDeLaura.deposito(5.498);
@@ -36,7 +34,7 @@ if(cuentaDeDana.cliente) {
     console.log(cuentaDeDana.cliente)
 } else {
     console.log(cuentaDeDana);
-}
+};
 
 saldo = cuentaDeDana.deposito(103475.756);
 saldo = cuentaDeDana.retiro(3475.756);
