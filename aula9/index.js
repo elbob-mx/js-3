@@ -55,5 +55,5 @@ console.log("Parámetro 'Valor'", paramValor);
 console.log("el saldo actual de " + usuario2.nombreCliente + " es de: " + "$" + cuentaDeDana.verSaldo() + "MXN");
 console.log("El saldo actual de " + usuario.nombreCliente + " es de: " + "$" + cuentaDeLaura.verSaldo() + "MXN");
 
-console.log(cuentaDeLaura.nombreCliente);
-console.log(cuentaDeDana.nombreCliente);
+console.log(cuentaDeLaura.usuario);
+console.log(cuentaDeDana.usuario);
