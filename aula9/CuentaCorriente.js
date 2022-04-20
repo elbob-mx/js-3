@@ -4,8 +4,9 @@ export class cuentaCorriente {
     
   #usuario;
   numero;
-  #saldo;
   agencia;
+  #saldo;
+  static cantidadCuentas = 0;
 
   /**
  * @param {import("./Cliente").cliente} valor
@@ -24,6 +25,7 @@ export class cuentaCorriente {
       this.numero = numero;
       this.agencia = agencia;
       this.#saldo = 0;
+      cuentaCorriente.cantidadCuentas++;
   };
 
   deposito(importe) {

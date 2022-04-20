@@ -57,3 +57,5 @@ console.log("Cuenta de Dana: ", cuentaDeDana.verSaldo());
 
 console.log(cuentaDeLaura.usuario);
 console.log(cuentaDeDana.usuario);
+console.log("CANTIDAD DE CUENTAS CORRIENTES TOTALES: " + cuentaCorriente.cantidadCuentas);
+// console.log(cuentaCorriente.cantidadCuentas);
